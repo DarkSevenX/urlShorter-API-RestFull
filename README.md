@@ -34,8 +34,8 @@ Esta es una API RESTful para acortar URLs, construida con **Express** y **Prisma
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio
+   git clone https://github.com/DarkSevenX/urlShorter-API-RestFull.git
+   cd urlShorter-API-RestFull
    ```
 
 2. Instala las dependencias:
