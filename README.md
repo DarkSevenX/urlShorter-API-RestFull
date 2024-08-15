@@ -2,6 +2,12 @@
 
 Esta es una API RESTful para acortar URLs, construida con **Express** y **Prisma ORM**. La API proporciona funcionalidades para acortar URLs largas, redirigir a las URLs originales y verificar si una URL corta ya está registrada.
 
+# Documentación interactiva
+https://bysh.glitch.me/
+
+# Live preview 
+https://darksevenx.github.io/byte-short-FrontEnd/
+
 ## Índice
 
 - [Características](#características)
