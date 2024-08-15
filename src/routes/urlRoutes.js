@@ -9,7 +9,7 @@ router
 
 /**
  * @swagger
- * /api/:
+ * /:
  *   post:
  *     summary: Crea una URL corta
  *     description: Genera una URL corta para una URL original si no existe una URL corta ya registrada. Retorna la URL original y la URL corta generada.
@@ -36,7 +36,7 @@ router
  *                   example: http://www.wikipedia.com
  *                 urlShorted:
  *                   type: string
- *                   example: http://short.url/api/abc123
+ *                   example: http://short.url/abc123
  *       400:
  *         description: URL inválida
  *         content:
