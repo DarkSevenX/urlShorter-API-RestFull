@@ -1,4 +1,4 @@
-# API dxe Acortador de URLs
+# API rest Acortador de URLs
 
 Esta es una API RESTful para acortar URLs, construida con **Express** y **Prisma ORM**. La API proporciona funcionalidades para acortar URLs largas, redirigir a las URLs originales y verificar si una URL corta ya está registrada.
 
