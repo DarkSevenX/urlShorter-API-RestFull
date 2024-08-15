@@ -24,7 +24,7 @@ export const shortUrl = async (req,res) => {
     if (existingUrl) {
       return res.json({
         originalUrl: existingUrl.originalUrl,
-        urlShorted: `${domain}/api/${existingUrl.urlCode}`
+        urlShorted: `${domain}/${existingUrl.urlCode}`
       })
     }
 
@@ -38,7 +38,7 @@ export const shortUrl = async (req,res) => {
 
     res.json({
       originalUrl: newUrl.originalUrl,
-      urlShorted: `${domain}/api/${newUrl.urlCode}`
+      urlShorted: `${domain}/${newUrl.urlCode}`
     })
 
   } catch (error) {
