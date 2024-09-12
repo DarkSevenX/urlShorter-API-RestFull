@@ -6,7 +6,7 @@ Esta es una API RESTful para acortar URLs, construida con **Express** y **Prisma
 https://bysh.glitch.me/docs
 
 ## Live preview 
-https://darksevenx.github.io/byte-short-FrontEnd/
+https://byteshort.surge.sh/
 
 ## Índice
 
