@@ -12,11 +12,13 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^5.18.0",
+    "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-validator": "^7.2.0",
     "morgan": "^1.10.0",
-    "shortid": "^2.2.16",
+    "nanoid": "^5.0.7",
+    "node-cron": "^3.0.3",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },

@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import { swaggerDocs } from './routes/swagger.js';
 import cors from 'cors'
 import ulrRouter from './routes/urlRoutes.js'
+import '../cron.js'
 
 const app = express()
 const port = process.env.PORT || 3000 

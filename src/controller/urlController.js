@@ -1,5 +1,5 @@
 import prisma from "../db.js";
-import shortid from "shortid";
+import { nanoid } from "nanoid";
 
 const domain = process.env.DOMAIN
 
@@ -28,7 +28,22 @@ export const shortUrl = async (req,res) => {
       })
     }
 
-    const urlCodeGenerated = shortid.generate() 
+    const urlCodeGenerated = nanoid(6)
+    const existingUrlCode = await prisma.url.findUnique({
+      where: {
+        urlCode: urlCodeGenerated
+      }
+    })
+
+    while (existingUrlCode) {
+      urlCodeGenerated = nanoid(6)
+      existingUrlCode = await prisma.url.findUnique({
+        where: {
+          urlCode: urlCodeGenerated
+        }
+      })
+    }
+
     const newUrl = await prisma.url.create({
       data: {
         originalUrl: url,
